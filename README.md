@@ -27,7 +27,7 @@ The Krusty Krab is a restaurant app that lets users input the names of burgers t
 
   ## Deployment
   
-  This app is deployed [here](https://ancient-sands-36750.herokuapp.com/)
+  This app is deployed [here](https://tranquil-spire-12781.herokuapp.com/)
   
 
 

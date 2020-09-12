@@ -1,0 +1,50 @@
+<div class="jumbotron text-center" id="title">The Krusty Krab
+    <div class="col">
+        <img id="krustykrab" src="/assets/img/krustykrab.png">
+
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col" id="available-burgers">
+            <h2 class="burger-title text-center">Krabby Patties Available</h2>
+            {{#each burgers}}
+            {{#unless devoured}}
+            <div class="available-burgers">
+                {{burger_name}}
+                <form action="burgers/devoured/{{id}}" method="POST">
+                    <input type="hidden" name="devoured" value="true">
+                    <button class="btn btn-default" type="submit">Devour it!</button>
+                </form>
+            </div>
+            {{/unless}}
+            {{/each}}
+        </div>
+        <br>
+        <span>
+        <img id="sponge" src="/assets/img/1krabbypatty.jpg">
+        </span>
+        <br>
+        <div class="col" id="devoured">
+            <h2 class="burger-title text-center">Krabby Patties Devoured</h2>
+            {{#each burgers}}
+            {{#if devoured}}
+            <div class="devoured-burgers">
+                {{burger_name}}
+            </div>
+            {{/if}}
+            {{/each}}
+        </div>
+    </div>
+</div>
+
+<br>
+<form id="add-burger" action="burgers/create" method="POST">
+    <div class="form-group col-md-8">
+        <input type="text" name="burger_name" class="form-control">
+        <button type="submit" class=" btn btn-default btn-lg">ADD BURGER</button>
+    </div>
+</form>

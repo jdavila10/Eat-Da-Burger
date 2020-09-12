@@ -1,0 +1,72 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #ffd06e;
+
+}
+#krustykrab {
+    max-width: 30%;
+    height: auto;
+    border-radius: 50%;
+    
+  }
+
+#title {   
+    font-size: 60px;
+    padding: 20px;
+    color: #D62500;
+    background-color: #ffd06e;
+}
+
+
+#available-burgers {
+    margin: 10px;
+    height: 300px;
+    overflow: auto;
+}
+
+
+.available-burgers {
+    overflow: hidden;
+    font-size: 20px;
+    margin: 8px;    
+    padding: 3px;
+}
+
+
+#devoured {
+    margin: 10px;
+    height: 300px;
+    overflow: auto;
+}
+.devoured-burgers {
+    font-size: 20px;
+    margin: 8px;    
+    padding: 3px;
+    
+}
+
+#add-burger{
+    margin: 0 auto; 
+    width: 420px;
+    margin-bottom: 50px;
+    margin-right: 39%;
+}
+.btn-lg {
+    margin-left: 47px;
+    margin-top: 4px;
+
+}
+
+#sponge {
+    border-radius: 8px;
+    width: 260px;
+    height: 160px;
+    margin-top: 60px;
+}
+
+
+
+
+
+
+
